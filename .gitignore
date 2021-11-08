@@ -1,3 +1,29 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.*
+!.env.example
 node_modules/
 .anchor
 **/*.rs.bk
@@ -18,7 +44,6 @@ yarn-error.log*
 !js/packages/metaplex/src/fonts/fonts.css
 !js/packages/metaplex/src/utils/globals.css
 js/.eslintcache
-js/node_modules
 target
 .env
 .vscode
@@ -32,10 +57,5 @@ hfuzz_workspace
 **/.DS_Store
 .cache
 js/packages/web/.env
-js/packages/cli/node_modules
-js/packages/common/node_modules
-js/packages/fair_launch/node_modules
-js/packages/graphql/node_modules
-js/packages/web/node_modules
 traits
 traits-configuration.json
